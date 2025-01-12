@@ -1,0 +1,23 @@
+namespace ToDoList
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime currentTime = DateTime.Now;
+            Console.WriteLine("Date and time: {0}", currentTime.ToString());
+            Console.WriteLine(" ");
+            Console.WriteLine("Your Daily To-Do List");
+            Console.WriteLine(" ");
+            Console.Write("How many tasks will you accomplish today? ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" ");
+            Console.WriteLine("Write your tasks below:");
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("{0}. ", i+1);
+                string task = Console.ReadLine();
+            }
+        }
+    }
+}
