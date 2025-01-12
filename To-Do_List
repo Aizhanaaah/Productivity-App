@@ -13,10 +13,13 @@ namespace ToDoList
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" ");
             Console.WriteLine("Write your tasks below:");
+            string priority;
             for (int i = 0; i < n; i++)
             {
                 Console.Write("{0}. ", i+1);
-                string task = Console.ReadLine();
+                string tasks = Console.ReadLine();
+                Console.Write("Priority (high, medium, low): ");
+                priority = Console.ReadLine();
             }
         }
     }
